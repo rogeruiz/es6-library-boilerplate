@@ -10,7 +10,7 @@
   'use strict';
 
   // @include ./another.js
-  // @include ./index.js
+  // @include ./my-library.js
   
   return <%= exportVarName %>;
 });
