@@ -11,4 +11,8 @@ describe('A feature test', function() {
   it('should have always returned hello', function() {
     expect(MyLibrary.mainFn).to.have.always.returned('hello');
   });
+
+  it('should have _', function() {
+    expect(MyLibrary.each).to.equal(_.each);
+  });
 });

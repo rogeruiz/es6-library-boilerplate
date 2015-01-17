@@ -1,8 +1,9 @@
 (function(root, factory) {
   if (typeof define === 'function' && define.amd) {
-    define([], factory);
+    define(['underscore'], factory);
   } else if (typeof exports !== 'undefined') {
-    module.exports = factory();
+    var _  = require('underscore');
+    module.exports = factory(_);
   } else {
     root.<%= exportVarName %> = factory(root._);
   }
